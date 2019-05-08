@@ -1,0 +1,37 @@
+extends ../template
+
+block variables
+    - var title = 'Kir Pak Services';
+
+block content
+    #preloader
+        #preloader-logo
+    .wrapper
+        section.main
+            include ../common/header
+            .title-block
+                .title We do things with new ideas
+                .subtitle We are  specialists, which building envelope install and repair non-structural coverings #[br] to buildings using a variety of materials such as wood, glass and metal.
+                .btn-block
+                    button.btn About Us
+            a.scroll-down(href="#info")
+        section.info#info
+            h2.info__title Why choose us?
+            .adv
+                ul.adv__list
+                    li.adv__item
+                        .adv__img
+                                img.adv__pic(src="assets/images/icons/1.png", alt="")
+                        h3.adv__title Advanced solutions
+                        .adv__text Whether you’re hiring us for a new or existing building project, we leverage advances in technology and equipment in the evaluation and design of exterior facility systems.
+                    li.adv__item
+                        .adv__img
+                                img.adv__pic(src="assets/images/icons/2.png", alt="")
+                        h3.adv__title Industry backgrounds
+                        .adv__text With diverse backgrounds in contracting, materials manufacturing, engineering and architecture; we get how facilities are designed, constructed and maintained. This informs our understanding and design of solutions for moisture-related issues.
+                    li.adv__item
+                        .adv__img
+                                img.adv__pic(src="assets/images/icons/3.png", alt="")
+                        h3.adv__title Decrease project risk
+                        .adv__text Design considerations including material compatibility, constructability, structural load capacity, fire resistance, drainage capacity, wind uplift resistance, thermal resistivity and code compliance.
+        include ../common/footer

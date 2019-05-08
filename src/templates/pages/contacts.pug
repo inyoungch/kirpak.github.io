@@ -1,0 +1,47 @@
+extends ../template
+
+block variables
+    - var title = 'Contacts';
+
+block content
+    #preloader
+        #preloader-logo
+    .wrapper
+        section.contacts
+            include ../common/header
+            .contacts-block
+                .contacts-back
+                    h1.contacts__title Contact us
+                    .contacts-view
+                        ul.contacts__list
+                            li.contacts__item
+                                .contacts__img
+                                    img.contacts__pic(src="assets/images/icons/phone.png", alt="")
+                                .contacts__name Phone
+                                a(href="6478914951").contacts__text 647 - 891 - 4951
+                            li.contacts__item
+                                .contacts__img
+                                    img.contacts__pic(src="assets/images/icons/mail.png", alt="")
+                                .contacts__name Email
+                                a(href="kirpak82@gmail.com").contacts__text kirpak82@gmail.com
+                            li.contacts__item
+                                .contacts__img
+                                    img.contacts__pic(src="assets/images/icons/loc.png", alt="")
+                                .contacts__name Address
+                                .contacts__text 41 Aidan Drive, Kleinburg,#[br] ON L4H 0T5 Canada
+        .request
+            h2.request__title Get in touch
+            form.form
+                form.form__elem#form__elem(action="server.php", method="post")
+                    input.form__input#user-name(type="text" name="user-name" placeholder="Your name *" required)
+                    input.form__input#user-mail(type="text" name="user-mail" placeholder="Email *" required)
+                    input.form__input.phone-mask#user-phone(type="text" name="user-phone" placeholder="Phone *" required)
+                    input.form__input#user-theme(type="text" name="user-theme" placeholder="Subject")
+                    textarea.form__input.form__textarea#comment(type="text" name="comment" placeholder="Message *" required)
+                    .btn-send
+                        button.btn__submit.order__btn(type="submit") Send request
+        
+        .map
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.211229666285!2d-79.5589106847153!3d43.85145037911505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b28a9125bcad1%3A0x6f470e490f32c8f1!2zNDEgQWlkYW4gRHIsIEtsZWluYnVyZywgT04gTDRIIDBUNSwg0JrQsNC90LDQtNCw!5e0!3m2!1sru!2skz!4v1556309486700!5m2!1sru!2skz', width='100%', height='450', frameborder='0', style='border:0', allowfullscreen='')
+
+        include ../common/footer
