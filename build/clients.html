@@ -8,6 +8,9 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/styles/app.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -37,7 +40,47 @@
       <div class="clients">
         <h1 class="clients__title title--w">Testimonials</h1>
       </div>
-      <div class="clients-block"></div>
+      <div class="clients-block">
+        <h2 class="clients-block__title">Our Clients Say</h2>
+        <div class="testimonials owl-carousel">
+          <div class="testimonials__item">
+            <div class="testimonials__pic"><img class="testimonials__img" src="assets/images/testimonials/m1.jpg" alt="Testimonial"></div>
+            <div class="testimonials__text">Kir Pak Services did an excellent job from the conceptual stage through the finished construction of our new warehouse/corporate office facility. We look forward to working with them again on our next project.</div>
+            <div class="testimonials__name">Michael Smith</div>
+            <div class="testimonials__occ">General Manager</div>
+          </div>
+          <div class="testimonials__item">
+            <div class="testimonials__pic"><img class="testimonials__img" src="assets/images/testimonials/w1.jpg" alt="Testimonial"></div>
+            <div class="testimonials__text">We were impressed with Kir Pak Services’s work ethic and commitment to finishing our project on time. If I had to sum up our building project with them in two words, they’d be effective and efficient.</div>
+            <div class="testimonials__name">Maria Garcia</div>
+            <div class="testimonials__occ">Director</div>
+          </div>
+          <div class="testimonials__item">
+            <div class="testimonials__pic"><img class="testimonials__img" src="assets/images/testimonials/m2.jpg" alt="Testimonial"></div>
+            <div class="testimonials__text">Our construction project started in the winter—and the conditions were not ideal. Despite this, Kir Pak Services successfully finished our project on time and without any safety incidents.</div>
+            <div class="testimonials__name">John Williams</div>
+            <div class="testimonials__occ">Vice-president</div>
+          </div>
+          <div class="testimonials__item">
+            <div class="testimonials__pic"><img class="testimonials__img" src="assets/images/testimonials/w2.jpg" alt="Testimonial"></div>
+            <div class="testimonials__text">We’ve worked with Kir Pak Services on three building projects over the last 2 years, and we’re always impressed with their thoroughness and commitment to quality. They have always met or exceeded our expectations.</div>
+            <div class="testimonials__name">Laura Clark</div>
+            <div class="testimonials__occ">Vice-president</div>
+          </div>
+          <div class="testimonials__item">
+            <div class="testimonials__pic"><img class="testimonials__img" src="assets/images/testimonials/m3.jpg" alt="Testimonial"></div>
+            <div class="testimonials__text">Kir Pak Services was truly a collaborative partner; working with us in a cost effective, efficient and quality construction product. The knowledge of the Kir Pak Services team was truly a value add to the overall success of our build-out project.</div>
+            <div class="testimonials__name">Matthew Robinson</div>
+            <div class="testimonials__occ">Director</div>
+          </div>
+          <div class="testimonials__item">
+            <div class="testimonials__pic"><img class="testimonials__img" src="assets/images/testimonials/w3.jpg" alt="Testimonial"></div>
+            <div class="testimonials__text">Kir Pak Services thank you for all of your hard work on our project… I seriously don’t know how you did it but it came together so well.</div>
+            <div class="testimonials__name">Alice Campbell</div>
+            <div class="testimonials__occ">General Manager</div>
+          </div>
+        </div>
+      </div>
       <footer class="footer">
         <div class="footer__left">
           <div class="copyright">Copy Right 2019 © By In Young Choi. All Rights Reserved.</div>
@@ -48,11 +91,37 @@
         </div>
       </footer>
     </div>
+    <div class="status-popup popup" id="success">
+      <div class="status-popup__inner">
+        <div class="status-popup__message">Message sent</div>
+      </div>
+    </div>
+    <div class="status-popup popup" id="error">
+      <div class="status-popup__inner">
+        <div class="status-popup__message">An error on the server side</div>
+      </div>
+    </div>
+    <div class="hamburger__menu"><a class="hamburger__menu-link" id="hamburger__menu-link" href="#">
+        <div class="hamburger__bars"></div></a></div>
+    <div class="dark-menu" id="dark-menu">
+      <div class="dark-menu__items">
+        <nav class="nav_hamburger"></nav>
+        <ul class="nav__listt" id="nav__list_hamburger">
+          <li class="nav__item_hamburger"><a class="nav__link" href="/">Home</a></li>
+          <li class="nav__item_hamburger"><a class="nav__link" href="about.html">About us</a></li>
+          <li class="nav__item_hamburger"><a class="nav__link" href="services.html">Services</a></li>
+          <li class="nav__item_hamburger"><a class="nav__link" href="projects.html">Projects</a></li>
+          <li class="nav__item_hamburger"> <a class="nav__link" href="clients.html">Clients</a></li>
+          <li class="nav__item_hamburger"> <a class="nav__link" href="contacts.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </body>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="assets/scripts/bundle.js" defer></script>
 </html>

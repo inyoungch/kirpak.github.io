@@ -8,6 +8,9 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/styles/app.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -39,7 +42,7 @@
           <div class="title">We do things with new ideas</div>
           <div class="subtitle">We are  specialists, which building envelope install and repair non-structural coverings <br> to buildings using a variety of materials such as wood, glass and metal.</div>
           <div class="btn-block">
-            <button class="btn">About Us</button>
+            <button class="btn" onclick="window.location.href='about.html'">About Us</button>
           </div>
         </div><a class="scroll-down" href="#info"></a>
       </section>
@@ -75,11 +78,37 @@
         </div>
       </footer>
     </div>
+    <div class="status-popup popup" id="success">
+      <div class="status-popup__inner">
+        <div class="status-popup__message">Message sent</div>
+      </div>
+    </div>
+    <div class="status-popup popup" id="error">
+      <div class="status-popup__inner">
+        <div class="status-popup__message">An error on the server side</div>
+      </div>
+    </div>
+    <div class="hamburger__menu"><a class="hamburger__menu-link" id="hamburger__menu-link" href="#">
+        <div class="hamburger__bars"></div></a></div>
+    <div class="dark-menu" id="dark-menu">
+      <div class="dark-menu__items">
+        <nav class="nav_hamburger"></nav>
+        <ul class="nav__listt" id="nav__list_hamburger">
+          <li class="nav__item_hamburger"><a class="nav__link" href="/">Home</a></li>
+          <li class="nav__item_hamburger"><a class="nav__link" href="about.html">About us</a></li>
+          <li class="nav__item_hamburger"><a class="nav__link" href="services.html">Services</a></li>
+          <li class="nav__item_hamburger"><a class="nav__link" href="projects.html">Projects</a></li>
+          <li class="nav__item_hamburger"> <a class="nav__link" href="clients.html">Clients</a></li>
+          <li class="nav__item_hamburger"> <a class="nav__link" href="contacts.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </body>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="assets/scripts/bundle.js" defer></script>
 </html>

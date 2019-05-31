@@ -27,20 +27,20 @@ $iphone5:320px;
     @return $px  / 16px+0rem;
 }
 
-@mixin tablets{
-    @media screen and (max-width:$tablets){
-        @content;
-    }
-}
-
 @mixin phones{
-    @media screen and (max-width:$phones){
+    @media (min-width:240px) and (max-width:479px){
         @content;
     }
 }
 
-@mixin iphone5{
-    @media screen and (max-width:$iphone5){
+@mixin tablets{
+    @media (min-width:480px) and (max-width:767px){
+        @content;
+    }
+}
+
+@mixin netbook{
+    @media (min-width:768px) and (max-width:1024px){
         @content;
     }
 }
