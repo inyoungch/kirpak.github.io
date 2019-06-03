@@ -74,7 +74,7 @@
 }
 
 .logo__img{
-	width: rem(90px);
+	width: rem(80px);
 	height: 100%;
     display: flex;
     align-items: center;
@@ -113,6 +113,8 @@
 	align-items: center;
 
 	@include netbook{
+		height: 100%;
+		align-items: center;
 		font-size: rem(13px);
 	}
 }
@@ -263,6 +265,10 @@
 	flex-direction: column;
 	height: rem(1000px);
 
+	@include netbook{
+		height: rem(650px);
+	}
+
 	@include phones{
 		height: rem(1100px);
 	}
@@ -396,6 +402,7 @@
 	font-size: rem(18px);
 	justify-content: space-around;
 	height: rem(95px);
+	
 
 	@include netbook{
 		font-size: rem(14px);
@@ -423,6 +430,11 @@
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
+	height: rem(600px);
+
+	@include netbook{
+		height: rem(400px);
+	}
 	
 	@include tablets{
 		height: rem(580px);
@@ -442,6 +454,9 @@
 	height: 80%;
 	background: $gray;
 	opacity: 0.8;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
 	@include tablets{
 		height: 60%;
@@ -1120,7 +1135,7 @@
 	text-align: center;
 	justify-content: center;
 	grid-gap: rem(35px);
-	grid-template-rows: rem(320px) rem(320px) rem(320px) rem(320px) rem(320px) rem(320px) rem(320px) rem(320px) rem(320px) rem(320px);
+	grid-template-rows: rem(320px) rem(320px) rem(320px) rem(320px) rem(320px) rem(320px) rem(320px) rem(320px) rem(320px);
 
 	@include netbook{
 		grid-gap: rem(20px);
@@ -1174,7 +1189,8 @@
 	color: $blue;
 	font-size: rem(18px);
 	margin-bottom: rem(20px);
-
+	height: rem(30px);
+	
 	@include netbook{
 		font-size: rem(15px);
 	}
@@ -1240,197 +1256,195 @@
 
 
 //clients//////////////////////////////////////////
-.clients{
-	background: url('../images/clients-bg.jpg') no-repeat;
-	background-size: cover;
-	background-position-y: 25%;
-	height: rem(300px);
-	display: flex;
-	align-items: center;
-	// clip-path: 
-	// polygon(50% 0%, 100% 0, 100% 49%, 50% 100%, 0 50%, 0 0);
+// .clients{
+// 	background: url('../images/clients-bg.jpg') no-repeat;
+// 	background-size: cover;
+// 	background-position-y: 25%;
+// 	height: rem(300px);
+// 	display: flex;
+// 	align-items: center;
 
-	@include netbook{
-		height: rem(200px);
-	}
+// 	@include netbook{
+// 		height: rem(200px);
+// 	}
 
-	@include tablets{
-		height: rem(180px);
-	}
+// 	@include tablets{
+// 		height: rem(180px);
+// 	}
 
-	@include phones{
-		height: rem(170px);
-	}
-}
+// 	@include phones{
+// 		height: rem(170px);
+// 	}
+// }
 
-.clients-block{
-	background: $gray;
-	text-align: center;
-	color: $blue;
-	padding: 0 0 rem(60px) 0;
-}
+// .clients-block{
+// 	background: $gray;
+// 	text-align: center;
+// 	color: $blue;
+// 	padding: 0 0 rem(60px) 0;
+// }
 
-.clients-block__title{
-	padding: rem(40px);
-    font-size: rem(30px);
-	font-family: 'Montserrat';
-    font-weight: normal;
-	font-style: normal;
-	font-weight: bold;
+// .clients-block__title{
+// 	padding: rem(40px);
+//     font-size: rem(30px);
+// 	font-family: 'Montserrat';
+//     font-weight: normal;
+// 	font-style: normal;
+// 	font-weight: bold;
 
-	@include netbook{
-		font-size: rem(22px);
-	}
+// 	@include netbook{
+// 		font-size: rem(22px);
+// 	}
 
-	@include tablets{
-		font-size: rem(20px);
-		padding: rem(20px);
-	}
+// 	@include tablets{
+// 		font-size: rem(20px);
+// 		padding: rem(20px);
+// 	}
 
-	@include phones{
-		font-size: rem(20px);
-		padding: rem(20px);
-	}
-}
+// 	@include phones{
+// 		font-size: rem(20px);
+// 		padding: rem(20px);
+// 	}
+// }
 
-.testimonials{
-	padding: rem(20px) rem(60px);
+// .testimonials{
+// 	padding: rem(20px) rem(60px);
 
-	@include netbook{
-		padding: rem(10px) rem(30px);
-	}
+// 	@include netbook{
+// 		padding: rem(10px) rem(30px);
+// 	}
 
-	@include tablets{
-		padding: rem(10px) rem(20px);
-	}
+// 	@include tablets{
+// 		padding: rem(10px) rem(20px);
+// 	}
 
-	@include phones{
-		padding: rem(10px) rem(20px);
-	}
-}
+// 	@include phones{
+// 		padding: rem(10px) rem(20px);
+// 	}
+// }
 
-.testimonials__item{
-	width: rem(540px);
-	margin-right: rem(30px);
-	background: $white;
-	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
-	text-align: center;
-	padding: rem(50px);
-	font-family: 'Montserrat';
-    font-weight: normal;
-	font-style: normal;
-	height: rem(450px);
+// .testimonials__item{
+// 	width: rem(540px);
+// 	margin-right: rem(30px);
+// 	background: $white;
+// 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+// 	text-align: center;
+// 	padding: rem(50px);
+// 	font-family: 'Montserrat';
+//     font-weight: normal;
+// 	font-style: normal;
+// 	height: rem(450px);
 
-	@include netbook{
-		width: rem(350px);
-		height: rem(300px);
-		padding: rem(20px);
-	}
+// 	@include netbook{
+// 		width: rem(350px);
+// 		height: rem(300px);
+// 		padding: rem(20px);
+// 	}
 
-	@include tablets{
-		width: 100%;
-		height: rem(300px);
-		padding: rem(15px);
-	}
+// 	@include tablets{
+// 		width: 100%;
+// 		height: rem(300px);
+// 		padding: rem(15px);
+// 	}
 
-	@include phones{
-		width: 100%;
-		height: rem(300px);
-		padding: rem(15px);
-	}
-}
+// 	@include phones{
+// 		width: 100%;
+// 		height: rem(300px);
+// 		padding: rem(15px);
+// 	}
+// }
 
-.testimonials__pic{
-	height: rem(110px);
-	width: rem(110px);
-	border-radius: 50%;
-	overflow: hidden;
-	border: 5px solid #dddddd;
-	margin: 0 auto;
+// .testimonials__pic{
+// 	height: rem(110px);
+// 	width: rem(110px);
+// 	border-radius: 50%;
+// 	overflow: hidden;
+// 	border: 5px solid #dddddd;
+// 	margin: 0 auto;
 
-	@include netbook{
-		width: rem(80px);
-		height: rem(80px);
-		border: 2px solid #dddddd;
-	}
+// 	@include netbook{
+// 		width: rem(80px);
+// 		height: rem(80px);
+// 		border: 2px solid #dddddd;
+// 	}
 	
-	@include tablets{
-		width: rem(70px);
-		height: rem(70px);
-		border: 2px solid #dddddd;
-	}
+// 	@include tablets{
+// 		width: rem(70px);
+// 		height: rem(70px);
+// 		border: 2px solid #dddddd;
+// 	}
 
-	@include phones{
-		width: rem(70px);
-		height: rem(70px);
-		border: 2px solid #dddddd;
-	}
-}
+// 	@include phones{
+// 		width: rem(70px);
+// 		height: rem(70px);
+// 		border: 2px solid #dddddd;
+// 	}
+// }
 
-.testimonials__img{
-	max-width: 100%;
-	//max-height: 100%;
-}
+// .testimonials__img{
+// 	max-width: 100%;
+// 	//max-height: 100%;
+// }
 
-.testimonials__name{
-	font-weight: bold;
-	margin-bottom: rem(5px);
-	font-size: rem(22px);
+// .testimonials__name{
+// 	font-weight: bold;
+// 	margin-bottom: rem(5px);
+// 	font-size: rem(22px);
 
-	@include netbook{
-		font-size: rem(16px);
-	}
+// 	@include netbook{
+// 		font-size: rem(16px);
+// 	}
 
-	@include tablets{
-		font-size: rem(15px);
-	}
+// 	@include tablets{
+// 		font-size: rem(15px);
+// 	}
 
-	@include phones{
-		font-size: rem(15px);
-	}
-}
+// 	@include phones{
+// 		font-size: rem(15px);
+// 	}
+// }
 
-.testimonials__occ{
-	text-transform: uppercase;
-	color: $dark;
-	font-size: rem(14px);
-	font-weight: bold;
+// .testimonials__occ{
+// 	text-transform: uppercase;
+// 	color: $dark;
+// 	font-size: rem(14px);
+// 	font-weight: bold;
 
-	@include netbook{
-		font-size: rem(12px);
-	}
+// 	@include netbook{
+// 		font-size: rem(12px);
+// 	}
 
-	@include tablets{
-		font-size: rem(11px);
-	}
+// 	@include tablets{
+// 		font-size: rem(11px);
+// 	}
 
-	@include phones{
-		font-size: rem(11px);
-	}
-}
+// 	@include phones{
+// 		font-size: rem(11px);
+// 	}
+// }
 
-.testimonials__text{
-	color: $dark;
-	margin: rem(30px) 0;
-	height: rem(110px);
+// .testimonials__text{
+// 	color: $dark;
+// 	margin: rem(30px) 0;
+// 	height: rem(110px);
 
-	@include netbook{
-		font-size: rem(13px);
-		margin: rem(10px) 0;
-	}
+// 	@include netbook{
+// 		font-size: rem(13px);
+// 		margin: rem(10px) 0;
+// 	}
 
-	@include tablets{
-		font-size: rem(12px);
-		margin: rem(20px) 0;
-		height: rem(80px);
-	}
+// 	@include tablets{
+// 		font-size: rem(12px);
+// 		margin: rem(20px) 0;
+// 		height: rem(80px);
+// 	}
 
-	@include phones{
-		font-size: rem(12px);
-		margin: rem(20px) 0;
-		height: rem(80px);
-	}
-}
+// 	@include phones{
+// 		font-size: rem(12px);
+// 		margin: rem(20px) 0;
+// 		height: rem(80px);
+// 	}
+// }
 
 
 

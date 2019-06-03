@@ -163,31 +163,31 @@ hamburger.init();
  $(".open_fancybox").click(function() {
 
   $.fancybox.open([{
-      href: 'assets/images/block17/5.jpg',
+      href: 'assets/images/Block17/5.jpg',
       title: '"Block 17 North" on River Street north of Dundas'
     },
     {
-      href: 'assets/images/block17/1.jpg',
+      href: 'assets/images/Block17/1.jpg',
       title: 'Designed by Wallman Architects'
     },
     {
-      href: 'assets/images/block17/2.jpg',
+      href: 'assets/images/Block17/2.jpg',
       title: 'The 11-storey building is now topped out at a height of 42.6 metres'
     },
     {
-      href: 'assets/images/block17/3.jpg',
+      href: 'assets/images/Block17/3.jpg',
       title: 'The main building envelope is in the form of pre-finished aluminum panels in four different tones'
     },
     {
-      href: 'assets/images/block17/4.jpg',
+      href: 'assets/images/Block17/4.jpg',
       title: 'The brick panels surround punched windows with clear glazing and dark aluminum mullions.'
     },
     {
-      href: 'assets/images/block17/6.jpeg',
+      href: 'assets/images/Block17/6.jpeg',
       title: 'Recent start of cladding installation is hinting at the building\'s final look'
     },
     {
-      href: 'assets/images/block17/7.jpg',
+      href: 'assets/images/Block17/7.JPG',
       title: '158 replacement rental units'
     }
   ], 
@@ -215,7 +215,7 @@ hamburger.init();
 $(".open_fancybox1").click(function() {
 
   $.fancybox.open([{
-      href: 'assets/images/mun/1.jpg',
+      href: 'assets/images/mun/1.JPG',
       title: 'Memorial University st. John\'s Newfoundland'
     },
     {
@@ -223,48 +223,16 @@ $(".open_fancybox1").click(function() {
       title: 'Strucrural steel and glass installation. 2018-present'
     },
     {
-      href: 'assets/images/mun/3.jpg',
+      href: 'assets/images/mun/3.JPG',
       title: 'Partnership with BullsEye construction.'
     },
     {
-      href: 'assets/images/mun/4.jpg',
+      href: 'assets/images/mun/4.JPG',
       title: 'Memorial University st. John\'s Newfoundland'
     },
     {
-      href: 'assets/images/mun/5.jpg',
+      href: 'assets/images/mun/5.JPG',
       title: 'Memorial University st. John\'s Newfoundland'
-    }
-  ], 
-  {
-    nextEffect: 'none',
-    prevEffect: 'none',
-    padding: 0,
-    helpers: {
-      title: {
-        type: 'over'
-      },
-      thumbs: {
-        width: 75,
-        height: 50,
-        source: function(item) {
-          return item.href.replace('_b.jpg', '_s.jpg');
-        }
-      }
-    }
-  });
-
-  return false;
-});
-
-$(".open_fancybox2").click(function() {
-
-  $.fancybox.open([{
-      href: 'assets/images/1yonge/1.png',
-      title: 'The Prestige at Pinnacle Condos, 1 Yonge St'
-    },
-    {
-      href: 'assets/images/1yonge/2.png',
-      title: 'This condo has 3885 condo units and can be found at 1 Yonge Street'
     }
   ], 
   {
@@ -295,36 +263,8 @@ $(".open_fancybox3").click(function() {
       title: 'E Condos'
     },
     {
-      href: 'assets/images/econdos/2.jpg',
+      href: 'assets/images/econdos/2.JPG',
       title: 'You will find E Condos near the intersection of Eglinton Ave East & Holly St East Side in Toronto\'s Midtown | Central neighbourhood.'
-    }
-  ], 
-  {
-    nextEffect: 'none',
-    prevEffect: 'none',
-    padding: 0,
-    helpers: {
-      title: {
-        type: 'over'
-      },
-      thumbs: {
-        width: 75,
-        height: 50,
-        source: function(item) {
-          return item.href.replace('_b.jpg', '_s.jpg');
-        }
-      }
-    }
-  });
-
-  return false;
-});
-
-$(".open_fancybox4").click(function() {
-
-  $.fancybox.open([{
-      href: 'assets/images/kip/1.png',
-      title: 'The Kip District'
     }
   ], 
   {
@@ -359,44 +299,12 @@ $(".open_fancybox5").click(function() {
       title: 'Found in Toronto\'s Downtown area and built in 2018'
     },
     {
-      href: 'assets/images/alter/3.jpg',
+      href: 'assets/images/alter/3.JPG',
       title: 'Alter is a high-rise condo located in the Church St. Corridor neighbourhood. Spread out over 33 stories'
     },
     {
       href: 'assets/images/alter/4.png',
       title: 'This condo has 335 condo units and can be found at 89 McGill St.'
-    }
-  ], 
-  {
-    nextEffect: 'none',
-    prevEffect: 'none',
-    padding: 0,
-    helpers: {
-      title: {
-        type: 'over'
-      },
-      thumbs: {
-        width: 75,
-        height: 50,
-        source: function(item) {
-          return item.href.replace('_b.jpg', '_s.jpg');
-        }
-      }
-    }
-  });
-
-  return false;
-});
-
-$(".open_fancybox6").click(function() {
-
-  $.fancybox.open([{
-      href: 'assets/images/88scott/1.png',
-      title: '88 Scott'
-    },
-    {
-      href: 'assets/images/88scott/2.png',
-      title: 'Located in the heart of the Financial District at Scott and Wellington, 88 Scott captures the very essence of downtown Toronto living and polishes it to new brilliance.'
     }
   ], 
   {
@@ -427,7 +335,7 @@ $(".open_fancybox7").click(function() {
       title: 'Ten York'
     },
     {
-      href: 'assets/images/10york/2.jpg',
+      href: 'assets/images/10york/2.JPG',
       title: 'Located in The Waterfront neighbourhood, this Toronto condo is expected to be completed in 2019'
     },
     {
@@ -459,15 +367,15 @@ $(".open_fancybox7").click(function() {
 $(".open_fancybox8").click(function() {
 
   $.fancybox.open([{
-      href: 'assets/images/signature/1.jpg',
+      href: 'assets/images/signature/1.JPG',
       title: 'Signature JK 2016'
     },
     {
-      href: 'assets/images/signature/2.jpg',
+      href: 'assets/images/signature/2.JPG',
       title: 'Signature JK 2016'
     },
     {
-      href: 'assets/images/signature/3.jpg',
+      href: 'assets/images/signature/3.JPG',
       title: 'Signature JK 2016'
     }
   ], 
@@ -675,11 +583,11 @@ $(".open_fancybox13").click(function() {
       title: 'Spread out over 62 and 66 stories, suites at Harbour Plaza Residences range in size from 373 to 1121 sqft.'
     },
     {
-      href: 'assets/images/harbour/5.jpg',
+      href: 'assets/images/harbour/5.JPG',
       title: 'This condo has 1305 condo units and can be found at 90 Harbour Street & 1 York Street.'
     },
     {
-      href: 'assets/images/harbour/6.jpg',
+      href: 'assets/images/harbour/6.JPG',
       title: 'Harbour Plaza Residences'
     }
   ], 

@@ -7,8 +7,8 @@ block content
     #preloader
         #preloader-logo
     .wrapper
-        section.contacts
-            include ../common/header
+        include ../common/header
+        .contacts
             .contacts-block
                 .contacts-back
                     h1.contacts__title Contact us
@@ -29,7 +29,8 @@ block content
                                     img.contacts__pic(src="assets/images/icons/loc.png", alt="")
                                 .contacts__name Address
                                 .contacts__text 41 Aidan Drive, Kleinburg,#[br] ON L4H 0T5 Canada
-        .request
+                a.scroll-down(href="#request")
+        .request#request
             h2.request__title Get in touch
             form.form
                 form.form__elem#form__elem(action="server.php", method="post")
