@@ -8,11 +8,8 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/styles/app.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div id="preloader">
@@ -62,7 +59,7 @@
       </div>
       <div class="request" id="request">
         <h2 class="request__title">Get in touch</h2>
-        <form class="form">
+        <div class="form">
           <form class="form__elem" id="form__elem" action="server.php" method="post">
             <input class="form__input" id="user-name" type="text" name="user-name" placeholder="Your name *" required>
             <input class="form__input" id="user-mail" type="text" name="user-mail" placeholder="Email *" required>
@@ -73,7 +70,7 @@
               <button class="btn__submit order__btn" type="submit">Send request</button>
             </div>
           </form>
-        </form>
+        </div>
       </div>
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.211229666285!2d-79.5589106847153!3d43.85145037911505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b28a9125bcad1%3A0x6f470e490f32c8f1!2zNDEgQWlkYW4gRHIsIEtsZWluYnVyZywgT04gTDRIIDBUNSwg0JrQsNC90LDQtNCw!5e0!3m2!1sru!2skz!4v1556309486700!5m2!1sru!2skz" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
@@ -90,12 +87,12 @@
     </div>
     <div class="status-popup popup" id="success">
       <div class="status-popup__inner">
-        <div class="status-popup__message">Message sent</div>
+        <div class="status-popup__message">The e-mail has been sent successfully</div>
       </div>
     </div>
     <div class="status-popup popup" id="error">
       <div class="status-popup__inner">
-        <div class="status-popup__message">An error on the server side</div>
+        <div class="status-popup__message">An error occurred during the preparation of the despatch</div>
       </div>
     </div>
     <div class="hamburger__menu"><a class="hamburger__menu-link" id="hamburger__menu-link" href="#">
@@ -115,9 +112,6 @@
   </body>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="assets/scripts/bundle.js" defer></script>
 </html>

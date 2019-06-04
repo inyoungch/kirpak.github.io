@@ -7,9 +7,9 @@ console.log("hello, world");
 
 //preloader
 $(window).on('load', function() {
-  $('#preloader-logo').delay(1000).fadeOut();
-  $('#preloader').delay(1000).fadeOut('slow'); 
-  $('body').delay(1000).css({'overflow':'visible'});
+  $('#preloader-logo').delay(100).fadeOut();
+  $('#preloader').delay(100).fadeOut('slow'); 
+  $('body').delay(100).css({'overflow':'visible'});
 });
 
 //animated
@@ -21,29 +21,28 @@ $(document).ready(function() {
 
 
 //owl 
- $(function() {
-  $(".owl-carousel").owlCarousel({
-    loop:true,
-    items:2,
-    margin:40,
-    autoplay:true, 
-    smartSpeed:2000,
-    autoplayTimeout:4000,
-    scrollPerPage : false,
-    dots:true,
-    responsive: {
-      0: {
-      items: 1
-      },
-      768: {
-      items: 2
-      }
-      },
-  });
- });
+//  $(function() {
+//   $(".owl-carousel").owlCarousel({
+//     loop:true,
+//     items:2,
+//     margin:40,
+//     autoplay:true, 
+//     smartSpeed:2000,
+//     autoplayTimeout:4000,
+//     scrollPerPage : false,
+//     dots:true,
+//     responsive: {
+//       0: {
+//       items: 1
+//       },
+//       768: {
+//       items: 2
+//       }
+//       },
+//   });
+//  });
 
-
- //form
+//form
 
 var ajaxForm = function (form) {
   var url = form.attr('action'),
@@ -63,17 +62,6 @@ request.done(function(msg) {
 var popup = msg.status ? '#success' : '#error';
 $status = $(popup)
 
-// $.fancybox.open( 
-//   $status
-// , {
-//     type: 'inline',
-//     maxWidth: 250,
-//     fitToView: false,
-//     padding: 0,
-//     afterClose() {
-//       form.trigger('reset');
-//     }
-//   });
 
   $.fancybox.open($status, {
     type: 'inline',
@@ -86,19 +74,6 @@ $status = $(popup)
   });
 });
 
-// request.fail(function(jqXHR, textStatus) {
-//   $.fancybox.open( 
-//     $('#error').html("На сервере произошла ошибка: " + textStatus)
-//   , {
-//       type: 'inline',
-//       maxWidth: 250,
-//       fitToView: false,
-//       padding: 0,
-//       afterClose() {
-//         form.trigger('reset');
-//       }
-//     });
-// });
 request.fail(function (jqXHR, textStatus) {
   $.fancybox.open($('#error').html("На сервере произошла ошибка: " + textStatus), {
     type: 'inline',
@@ -113,7 +88,6 @@ request.fail(function (jqXHR, textStatus) {
 }
 
 $('#form__elem').on('submit', submitForm)
-
 
 //Hamburger menu
 var hamburger = (function() {
