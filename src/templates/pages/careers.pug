@@ -1,0 +1,36 @@
+extends ../template
+
+block variables
+    - var title = 'Kir Pak Services - Careers';
+
+block content
+    #preloader
+        #preloader-logo
+    .wrapper
+        include ../common/fast
+        include ../common/header
+        .careers
+            h1.about__title.title--w Careers
+        .careers-block
+            h2.careers__title Join our team
+            h4.careers__subtitle Raising the bar on appreciation
+        .careers__desc
+            p.careers__text Are you ready for a new opportunity?
+            p.careers__text In addition to the current open position(s) listed below, we are continuously looking for qualified individuals to join our group. Positions include: Project Manager, Project Engineer, Project Manager Assistant and Accounting. Personal resumes are welcome and will be reviewed.
+            p.careers__text If you are interested in joining our growing team, please view our vacancies or email us #[br] at #[a(href='kirpak82@gmail.com') kirpak82@gmail.com]
+        .careers__request
+            .gray-overlay
+                .careers__form
+                    .careers-form__title If you have experience in our sector, we are keen to hear from you
+                    .careers-form__subtitle We’re always on the look out for full-time and contract staff, so email us at #[a(href='kirpak82@gmail.com') kirpak82@gmail.com]
+                    .form
+                        form.form__elem#form__elem(action="server.php", method="post")
+                            input.form__input#user-name(type="text" name="user-name" placeholder="Your name *" required)
+                            input.form__input#user-mail(type="text" name="user-mail" placeholder="Email *" required)
+                            input.form__input.phone-mask#user-phone(type="text" name="user-phone" placeholder="Phone *" required)
+                            input.form__input#user-theme(type="text" name="user-theme" placeholder="Subject")
+                            textarea.form__input.form__textarea#comment(type="text" name="comment" placeholder="Message *: Please include details about your experience or position you'd like to apply for" required)
+                            .btn-send
+                                button.btn__submit.order__btn(type="submit") Send request
+        
+        include ../common/footer

@@ -1,0 +1,22 @@
+extends ../template
+
+block variables
+    - var title = 'Kir Pak Services - Safety';
+
+block content
+    #preloader
+        #preloader-logo
+    .wrapper
+        include ../common/fast
+        include ../common/header
+        .safety
+            h1.about__title.title--w Safety
+        .safety-block
+            .safety-block__left
+                .safety__img
+                    img.safety__pic(src="assets/images/safety.jpg", alt="Safety")
+            .safety-block__right
+                p Kir Pak Services believe that Health &amp; Safety is of the utmost importance.  We are dedicated to ensuring the safety of all of our workplace counterparts through rigorous training, frequent inspections, regular policy implementation and maintenance, and continued co-operation with professional Health and Safety groups.
+                p We urge all employees to work together to achieve our goal of making the work place as safe as possible.
+                p Because our company has a vital interest in ensuring safe and healthful and efficient working conditions for all of our employees, Kir Pak Services is a Drug Free Workplace.
+        include ../common/footer

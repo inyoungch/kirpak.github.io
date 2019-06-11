@@ -48,6 +48,49 @@
 		opacity: 0.2;
 	}
 }
+
+//fast
+.fast-block{
+	background: $white;
+	height: rem(30px);
+}
+
+.fast__list{
+	display: flex;
+	justify-content: flex-end;
+	height: 100%;
+}
+
+.fast__item{
+	margin-right: rem(40px);
+	display: flex;
+	align-items: center;
+}
+
+.fast__phone, .fast__mail{
+	color: $blue;
+	font-weight: 500;
+	font-size: rem(14px);
+	
+	@include netbook{
+		font-size: rem(13px);
+	}
+	
+	@include tablets{
+		font-size: rem(13px);
+	}
+	
+	@include phones{
+		font-size: rem(12px);
+	}
+
+}
+
+.fa{
+	margin-right: rem(10px);
+	color: $red;
+}
+
 //main
 
 .main{
@@ -60,7 +103,7 @@
 
 .header{
     display: flex;   
-    height: rem(95px);
+    height: rem(80px);
     width: 100%;
     justify-content: space-between;
     background:$blue;
@@ -71,20 +114,24 @@
     display: flex;
 	justify-content: center;
 	height: 100%;
+
+	@include phones{
+		width: rem(150px);
+	}
 }
 
 .logo__img{
-	width: rem(80px);
+	width: rem(70px);
 	height: 100%;
     display: flex;
     align-items: center;
 	
 	@include tablets{
-		width: rem(70px);
+		width: rem(60px);
 	}
 
 	@include phones{
-		width: rem(70px);
+		width: rem(60px);
 	}
 }
 
@@ -107,7 +154,7 @@
 
 .nav__list{
     display: flex;
-    font-size: rem(16px);
+    font-size: rem(15px);
     text-transform: uppercase;
     height: 100%;
 	align-items: center;
@@ -115,12 +162,16 @@
 	@include netbook{
 		height: 100%;
 		align-items: center;
-		font-size: rem(13px);
+		font-size: rem(11px);
 	}
 }
 
 .nav__item{
-    margin-right: rem(35px);
+	margin-right: rem(35px);
+	
+	@include netbook{
+		margin-right: rem(30px);
+	}
 }
 
 .nav__link{
@@ -396,16 +447,15 @@
 //footer
 .footer{
 	background:$blue;
-	display: flex;
 	align-items: center;
 	color: $white;
-	font-size: rem(18px);
-	justify-content: space-around;
-	height: rem(95px);
+	font-size: rem(13px);
+	height: rem(140px);
+	position: relative;
 	
 
 	@include netbook{
-		font-size: rem(14px);
+		font-size: rem(12px);
 	}
 
 	@include tablets{
@@ -417,9 +467,80 @@
 	}
 }
 
-.copyright{
+.footer-block{
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer__left{
+	display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-self: center;
+	justify-content: space-evenly;
+	padding-left: rem(15px);
+}
+
+.nav-footer{
+	margin-bottom: rem(20px);
+}
+
+.fast-contact{
+	display: flex;
+	font-size: rem(16px);
+
+	@include netbook{
+		font-size: rem(14px);
+	}
+}
+
+.fast-contact-text{
+	margin-right: rem(20px);
+}
+
+.fast__phone--w, .fast__mail--w{
+	color: $white;
+}
+
+.logo__img--big{
+	width: rem(90px);
+
 	@include phones{
-		padding-left: rem(20px);
+		width: rem(80px);
+	}
+}
+
+.copyright{
+	padding: rem(15px);
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.fast-contact__footer{
+
+	@include phones{
+		display: flex;
+		flex-direction: column;
+		margin-left: rem(20px);
+	}
+}
+
+.fast__list__footer{
+
+	@include phones{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.fast__item__footer, .fast-contact-text__footer{
+
+	@include phones{
+		margin-bottom: rem(5px);
 	}
 }
 
@@ -1238,6 +1359,192 @@
 }
 
 
+//safety//////////////////////////////////////////
+.safety{
+	background: url('../images/safety-bg.jpg') no-repeat;
+	background-size: cover;
+	background-position-y: 70%;
+	height: rem(300px);
+	display: flex;
+	align-items: center;
+	margin-bottom: rem(30px);
+
+	@include netbook{
+		height: rem(200px);
+	}
+
+	@include tablets{
+		height: rem(180px);
+	}
+
+	@include phones{
+		height: rem(170px);
+	}
+}
+
+.safety-block{
+	display: flex;
+	margin-bottom: rem(30px);
+
+	@include phones{
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+}
+
+.safety-block__left{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	
+	@include netbook{
+		align-items: center;
+		width: 60%;
+	}
+	
+	@include phones{
+		width: 100%;
+	}
+}
+
+.safety-block__right{
+	width: 50%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	padding: rem(40px);
+	color: $blue;
+
+	@include netbook{
+		padding: rem(20px);
+	}
+
+	@include phones{
+		width: 100%;
+		padding: rem(20px);
+	}
+}
+
+.safety__img{
+	width: 70%;
+}
+
+.safety__pic{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+//careers//////////////////////////////////////////
+.careers{
+	background: url('../images/careers-bg.jpg') no-repeat;
+	background-size: cover;
+	background-position-y: 40%;
+	height: rem(300px);
+	display: flex;
+	align-items: center;
+	margin-bottom: rem(30px);
+
+	@include netbook{
+		height: rem(200px);
+	}
+
+	@include tablets{
+		height: rem(180px);
+	}
+
+	@include phones{
+		height: rem(170px);
+	}
+}
+
+.careers-block{
+	display: flex;
+    flex-direction: column;
+	text-align: center;
+	color: #3e3e3e;
+	font-family: 'Montserrat';
+    font-weight: bold;
+	font-style: normal;
+}
+
+.careers__title{
+	text-transform: uppercase;
+    font-size: rem(40px);
+}
+
+.careers__subtitle{
+	font-size: rem(18px);
+}
+
+.careers__desc{
+	font-family: 'Montserrat';
+    font-weight: normal;
+	font-style: normal;
+	width: 70%;
+	display: flex;
+    flex-direction: column;
+    text-align: center;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+
+.careers__text{
+	margin: 0 0 15px 0;
+	color: $blue;
+}
+
+.careers__request{
+	background: url('../images/careers.jpg') no-repeat;
+	background-size: cover;
+	background-position-y: 30%;
+	height: rem(550px);
+
+	@include phones{
+		background-position-y: center;
+		background-position-x: 70%;
+	}
+}
+
+.gray-overlay{
+	background-color: rgba(0,0,0,0.5);
+	height: 100%;
+}
+
+.careers__form{
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	color: $white;
+}
+
+.careers-form__title{
+	text-transform: uppercase;
+    font-size: rem(25px);
+    font-family: 'Montserrat';
+    font-weight: bold;
+	font-style: normal;
+	padding: rem(25px);
+	text-align: center;
+
+	@include phones{
+		font-size: rem(20px);
+	}
+}
+
+.careers-form__subtitle{
+	font-family: 'Montserrat';
+    font-weight: bold;
+	font-style: normal;
+	margin-bottom: rem(30px);
+	text-align: center;
+
+	@include phones{
+		font-size: rem(12px);
+	}
+}
+
+
 //hamburger
 
 .hamburger__menu{
@@ -1249,7 +1556,11 @@
 	// }
 	
 	@include tablets{
-        top: 6%;
+        top: 11%;
+    }
+	
+	@include phones{
+        top: 11%;
     }
 }
 

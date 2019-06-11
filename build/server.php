@@ -15,11 +15,11 @@
         <body>
             <h2>Request</h2>
             <ul>
-                <li>Имя: ' . $name . '</li>
-                <li>Телефон: ' . $phone . '</li>
+                <li>Name: ' . $name . '</li>
+                <li>Phone number: ' . $phone . '</li>
                 <li>Email: ' . $mail . '</li>
-                <li>Тема: ' . $theme . '</li>
-                <li>Сообщение: ' . $comment . '</li>
+                <li>Theme: ' . $theme . '</li>
+                <li>Message: ' . $comment . '</li>
             </ul>
         </body>
     </html>    
