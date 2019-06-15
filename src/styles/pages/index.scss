@@ -1679,3 +1679,35 @@ body.locked {
     font-size: rem(24px);
 }
 
+//error/////////////////////
+.error{
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.error-block{
+	width: 100%;
+    display: flex;
+	justify-content: center;
+
+	@include phones{
+		height: 300px;
+	}
+}
+
+.error__pic{
+	height: 600px;
+}
+
+.error__img{
+	max-width: 100%;
+    max-height: 100%;
+}
+
+.btn-block_404{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}

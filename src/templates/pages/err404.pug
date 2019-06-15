@@ -1,0 +1,16 @@
+extends ../template
+
+block variables
+    - var title = 'Kir Pak Services - 404';
+    - var desc ='404';
+
+block content
+    #preloader
+        #preloader-logo
+    .wrapper
+        section.error
+            .error-block
+                .error__pic
+                    img.error__img(src="assets/images/404.jpg", alt="")
+            .btn-block.btn-block_404
+                button.btn(onclick="window.location.href='index.html'") Go HOME

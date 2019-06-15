@@ -48,6 +48,10 @@ const paths = {
         src: 'src/server.php',
         dest: 'build/'
     },
+    htaccess: {
+        src: 'src/.htaccess',
+        dest: 'build/'
+    },
 }
 
 // pug
@@ -126,6 +130,12 @@ function serverFile() {
         .pipe(gulp.dest(paths.serverFile.dest));
 }
 
+// просто переносим htaccess
+function htaccess() {
+    return gulp.src(paths.htaccess.src)
+        .pipe(gulp.dest(paths.htaccess.dest));
+}
+
 //svg
 function svgSpriteBuild() {
     return gulp.src('src/images/icons/*.svg')
@@ -164,9 +174,10 @@ exports.clean = clean;
 exports.images = images;
 exports.fonts = fonts;
 exports.serverFile = serverFile;
+exports.htaccess = htaccess;
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, templates, images, scripts, fonts, serverFile, svgSpriteBuild),
+    gulp.parallel(styles, templates, images, scripts, fonts, serverFile, htaccess, svgSpriteBuild),
     gulp.parallel(watch, server)
 ));
