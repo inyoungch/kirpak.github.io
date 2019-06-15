@@ -1,7 +1,4 @@
-//const slider = require('./common/slider');
-//const $ = require('jquery'); // если будет нужен
 
-//slider(); // инициализируем слайдер
 
 console.log("hello, world");
 
@@ -19,28 +16,6 @@ $(document).ready(function() {
   $('.btn').addClass('animated fadeInDown'); 
 })
 
-
-//owl 
-//  $(function() {
-//   $(".owl-carousel").owlCarousel({
-//     loop:true,
-//     items:2,
-//     margin:40,
-//     autoplay:true, 
-//     smartSpeed:2000,
-//     autoplayTimeout:4000,
-//     scrollPerPage : false,
-//     dots:true,
-//     responsive: {
-//       0: {
-//       items: 1
-//       },
-//       768: {
-//       items: 2
-//       }
-//       },
-//   });
-//  });
 
 //form
 

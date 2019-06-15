@@ -16,7 +16,7 @@ html, body{
 }
 
 body{
-    font-family: 'Roboto';
+    font-family: 'Roboto', serif;
     font-weight: normal;
 	font-style: normal;
     line-height: 1.42;
@@ -36,7 +36,6 @@ body{
 
 .content{
 	height: 100%;
-	//min-height: rem(650px);
 	transition: 1s;
     will-change: transform;
     @include tablets{

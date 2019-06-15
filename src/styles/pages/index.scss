@@ -1176,8 +1176,6 @@
 	height: rem(300px);
 	display: flex;
 	align-items: center;
-	// clip-path: 
-	// polygon(50% 0%, 100% 0, 100% 49%, 50% 100%, 0 50%, 0 0);
 
 	@include netbook{
 		height: rem(200px);
@@ -1551,16 +1549,13 @@
     position: absolute;
     top: 5%;
     right: 3%;
-    // @include iphone5{
-    //     top: 5%;
-	// }
 	
 	@include tablets{
         top: 11%;
     }
 	
 	@include phones{
-        top: 11%;
+        top: 9%;
     }
 }
 
@@ -1598,9 +1593,6 @@
 
 	&:before {
         top: 1%;
-        // @include iphone5{
-        //     top: -2%;
-        // }
 	}
 
 	&:after {
